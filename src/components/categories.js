@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { objectExpression } from '@babel/types';
 
 export default class Categories extends Component {
   render () {
@@ -7,7 +6,7 @@ export default class Categories extends Component {
       <div>
         <ul>
           {this.state.categories.map(item => (
-            <li>
+            <li key={item}>
               {item}
             </li>
           ))}

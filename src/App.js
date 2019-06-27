@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Categories from './components/categories'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <Categories></Categories>
+    <div className="App container">
+      <div class="row">
+        <div class="col">
+          <Categories></Categories>
+        </div>
+      </div>
     </div>
   );
 }
