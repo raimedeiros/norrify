@@ -1,28 +1,32 @@
 import React, { Component } from 'react'
+import { objectExpression } from '@babel/types';
 
 export default class Categories extends Component {
-  render() {
+  render () {
     return (
       <div>
         <ul>
-          <li>animal</li>
-          <li>career</li>
-          <li>celebrity</li>
-          <li>dev</li>
-          <li>explicit</li>
-          <li>fashion</li>
-          <li>food</li>
-          <li>history</li>
-          <li>money</li>
-          <li>movie</li>
-          <li>music</li>
-          <li>political</li>
-          <li>religion</li>
-          <li>science</li>
-          <li>sport</li>
-          <li>travel</li>
+          {this.state.categories.map(item => (
+            <li>
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     );
+  }
+
+  state = {
+    categories: []
+  }
+
+  componentDidMount () {
+    fetch('https://api.chucknorris.io/jokes/categories')
+      //fetch('http://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then((data) => {
+        this.setState({ categories: data })
+      })
+      .catch(console.log)
   }
 }
