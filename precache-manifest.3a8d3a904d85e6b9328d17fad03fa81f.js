@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fcdf7176416a13fb20e18cdf2dc8fbca",
+    "revision": "47fbd10993dd80bd520db3563c270a25",
     "url": "/joker-norris/index.html"
   },
   {
-    "revision": "fd7f986ccea815b163b9",
+    "revision": "69ddc70adba3fe2adcfc",
     "url": "/joker-norris/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "277dc579ac54a2ec070b",
+    "revision": "00a33390b3e0db16abc8",
     "url": "/joker-norris/static/css/main.b2331f98.chunk.css"
   },
   {
-    "revision": "fd7f986ccea815b163b9",
-    "url": "/joker-norris/static/js/2.b4377af0.chunk.js"
+    "revision": "69ddc70adba3fe2adcfc",
+    "url": "/joker-norris/static/js/2.92de6ade.chunk.js"
   },
   {
-    "revision": "277dc579ac54a2ec070b",
-    "url": "/joker-norris/static/js/main.d570c1c4.chunk.js"
+    "revision": "00a33390b3e0db16abc8",
+    "url": "/joker-norris/static/js/main.cfc9245e.chunk.js"
   },
   {
     "revision": "ae378216b6a90f2f82c5",
