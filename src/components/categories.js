@@ -16,9 +16,9 @@ class Categories extends Component {
               <h2>Escolha uma categoria</h2>
             </div>
             <div className="content-card">
-              <div class="row">
+              <div className="row">
                 {this.state.categories.map(item => (
-                  <div class="col-6 col-md-4 text-center">
+                  <div className="col-6 col-md-4 text-center">
                     <Link className="link-category" to='/joke/' onClick={() => this.setCategory(item)}>{item}</Link>
                   </div>
                 ))}
