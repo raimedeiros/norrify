@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home'
 import Joke from './pages/Joke'
 
-function App () {
+function App() {
   return (
     <div className="container">
-      <Router>
+      <Router basename='/joker-norris'>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path='/joke/' component={Joke} />
