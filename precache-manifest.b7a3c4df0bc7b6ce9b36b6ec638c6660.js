@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf73429f56e494d895076df59657e0f0",
+    "revision": "fcdf7176416a13fb20e18cdf2dc8fbca",
     "url": "/joker-norris/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/joker-norris/static/css/2.510409cd.chunk.css"
   },
   {
-    "revision": "a4348e851ee762baf7cc",
+    "revision": "277dc579ac54a2ec070b",
     "url": "/joker-norris/static/css/main.b2331f98.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/joker-norris/static/js/2.b4377af0.chunk.js"
   },
   {
-    "revision": "a4348e851ee762baf7cc",
-    "url": "/joker-norris/static/js/main.edf3f21c.chunk.js"
+    "revision": "277dc579ac54a2ec070b",
+    "url": "/joker-norris/static/js/main.d570c1c4.chunk.js"
   },
   {
     "revision": "ae378216b6a90f2f82c5",
