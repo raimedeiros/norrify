@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/joker-norris/static/css/main.d8cc6f78.chunk.css",
-    "main.js": "/joker-norris/static/js/main.0d51841b.chunk.js",
-    "main.js.map": "/joker-norris/static/js/main.0d51841b.chunk.js.map",
+    "main.js": "/joker-norris/static/js/main.b83dfd5d.chunk.js",
+    "main.js.map": "/joker-norris/static/js/main.b83dfd5d.chunk.js.map",
     "runtime~main.js": "/joker-norris/static/js/runtime~main.6ff6196b.js",
     "runtime~main.js.map": "/joker-norris/static/js/runtime~main.6ff6196b.js.map",
     "static/css/2.510409cd.chunk.css": "/joker-norris/static/css/2.510409cd.chunk.css",
     "static/js/2.d1215bd8.chunk.js": "/joker-norris/static/js/2.d1215bd8.chunk.js",
     "static/js/2.d1215bd8.chunk.js.map": "/joker-norris/static/js/2.d1215bd8.chunk.js.map",
     "index.html": "/joker-norris/index.html",
-    "precache-manifest.1dea67f4cb66d175278e325dc0fdb4b0.js": "/joker-norris/precache-manifest.1dea67f4cb66d175278e325dc0fdb4b0.js",
+    "precache-manifest.9c001b3061e8953c146f22ee3eb6f6ef.js": "/joker-norris/precache-manifest.9c001b3061e8953c146f22ee3eb6f6ef.js",
     "service-worker.js": "/joker-norris/service-worker.js",
     "static/css/2.510409cd.chunk.css.map": "/joker-norris/static/css/2.510409cd.chunk.css.map",
     "static/css/main.d8cc6f78.chunk.css.map": "/joker-norris/static/css/main.d8cc6f78.chunk.css.map"
