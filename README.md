@@ -1,6 +1,6 @@
 ## Criador de piadas do Chuck Norris
 
-Projeto criado cm base na API do [ChuckNorris.io](https://api.chucknorris.io/).
+Projeto criado cm base na API do [ChuckNorris.io](https://api.chucknorris.io/), utilizando React e Redux.
 O aplicativo inicia com a listagem das categorias disponíveis e ao selecionar alguma, é mostrada uma piada referente a categoria. Na página de categoria há a opção de voltar à listagem ou carregar mais uma piada da mesma categoria.
 
 ###  `npm install`
