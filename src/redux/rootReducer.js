@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import appReducer from './appReducer'
+import catReducer from './catReducer'
 import jokeReducer from './jokeReducer';
 
 const rootReducer = combineReducers({
-  categoria: appReducer,
+  categoria: catReducer,
   joke: jokeReducer
 })
 

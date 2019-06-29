@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import appActions from '../redux/appActions';
+import catActions from '../redux/catActions';
 import { connect } from 'react-redux';
 
 class Categories extends Component {
   setCategory(item) {
-    this.props.dispatch(appActions.setCategoria(item))
+    this.props.dispatch(catActions.setCategoria(item))
   }
   render() {
     return (
