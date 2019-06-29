@@ -72,6 +72,10 @@ body{
   text-transform: capitalize;
 }
 
+.loadingStatus{
+  padding-top:200px;
+  color:#FFFFFF;
+}
 .joke-block .card{
   margin-top:30px;
 }
@@ -91,4 +95,29 @@ body{
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

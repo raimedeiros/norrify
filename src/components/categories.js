@@ -2,12 +2,22 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import catActions from '../redux/catActions';
 import { connect } from 'react-redux';
+import Loading from '../components/Loading'
 
 class Categories extends Component {
+  state = {
+    loading: true
+  }
   setCategory(item) {
     this.props.dispatch(catActions.setCategoria(item))
   }
   render() {
+    const { loading } = this.state;
+    if (loading) {
+      return (
+        <Loading></Loading>
+      )
+    }
     return (
       <Fragment>
         <div className="row text-center">
@@ -35,10 +45,12 @@ class Categories extends Component {
   }
 
   componentDidMount() {
+    this.setState({ loading: true })
     fetch('https://api.chucknorris.io/jokes/categories')
       .then(res => res.json())
       .then((data) => {
         this.setState({ categories: data })
+        this.setState({ loading: false })
       })
       .catch(console.log)
   }
