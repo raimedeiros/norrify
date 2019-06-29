@@ -15,14 +15,12 @@ html {
   a {
     color: #7967FE;
     background: #ffffff;
-    border-radius: 100%;
+    border-radius: 50px 10px 10px 50px;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 40px;
-    padding-left: 9px;
-    width: 40px;
-    height: 40px;
-    display: block;
+    padding: 0px 10px 0px 15px;
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
   }

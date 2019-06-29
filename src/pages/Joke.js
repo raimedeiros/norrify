@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Moment from 'react-moment'
 import Navigator from '../components/navigator'
-import jokeActions from '../redux/jokeActions';
+import jokeActions from '../redux/actions/jokeActions';
 import Loading from '../components/loading';
 
 const url_api = 'https://api.chucknorris.io/jokes/random?category='
@@ -58,7 +58,7 @@ class Joke extends Component {
 
   getJoke() {
     this.setState({ loading: true })
-    fetch(url_api + (this.props.categoria.categoria ? this.props.categoria.categoria : 'animal'))
+    fetch(url_api + (this.props.categoriaSelecionada.categoria ? this.props.categoriaSelecionada.categoria : 'animal'))
       .then(res => res.json())
       .then((data) => {
         this.setJoke({ joke: data })
@@ -67,4 +67,4 @@ class Joke extends Component {
       .catch(console.log)
   }
 }
-export default connect(store => ({ categoria: store.categoria, jokeItem: store.joke }))(Joke)
+export default connect(store => ({ categoriaSelecionada: store.categoria, jokeItem: store.joke }))(Joke)

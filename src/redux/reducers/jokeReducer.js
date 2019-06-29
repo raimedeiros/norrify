@@ -1,4 +1,4 @@
-const initialState = { created: 'created', icon: 'icon', value: 'value', categories: [] }
+const initialState = { created: '', icon: '', value: '', categories: [] }
 
 export default function (state = initialState, action) {
   switch (action.type) {
