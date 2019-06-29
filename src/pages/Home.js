@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Categories from '../components/Categories'
+import Categories from '../components/categories'
 
 const Home = () => (
   <Fragment>

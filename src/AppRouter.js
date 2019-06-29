@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './pages/Home'
-import Joke from './pages/Joke'
+import Home from './pages/home'
+import Joke from './pages/joke'
 
 function App() {
   return (

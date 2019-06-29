@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import catActions from '../redux/catActions';
 import { connect } from 'react-redux';
-import Loading from '../components/Loading'
+import Loading from './loading'
 
 class Categories extends Component {
   state = {
