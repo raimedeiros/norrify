@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/joker-norris/static/css/main.d8cc6f78.chunk.css",
-    "main.js": "/joker-norris/static/js/main.b83dfd5d.chunk.js",
-    "main.js.map": "/joker-norris/static/js/main.b83dfd5d.chunk.js.map",
+    "main.css": "/joker-norris/static/css/main.ec44036a.chunk.css",
+    "main.js": "/joker-norris/static/js/main.d62f6353.chunk.js",
+    "main.js.map": "/joker-norris/static/js/main.d62f6353.chunk.js.map",
     "runtime~main.js": "/joker-norris/static/js/runtime~main.6ff6196b.js",
     "runtime~main.js.map": "/joker-norris/static/js/runtime~main.6ff6196b.js.map",
     "static/css/2.510409cd.chunk.css": "/joker-norris/static/css/2.510409cd.chunk.css",
-    "static/js/2.d1215bd8.chunk.js": "/joker-norris/static/js/2.d1215bd8.chunk.js",
-    "static/js/2.d1215bd8.chunk.js.map": "/joker-norris/static/js/2.d1215bd8.chunk.js.map",
+    "static/js/2.179e0209.chunk.js": "/joker-norris/static/js/2.179e0209.chunk.js",
+    "static/js/2.179e0209.chunk.js.map": "/joker-norris/static/js/2.179e0209.chunk.js.map",
     "index.html": "/joker-norris/index.html",
-    "precache-manifest.9c001b3061e8953c146f22ee3eb6f6ef.js": "/joker-norris/precache-manifest.9c001b3061e8953c146f22ee3eb6f6ef.js",
+    "precache-manifest.3581000b6b25c5f00efd9984d5b0cfd9.js": "/joker-norris/precache-manifest.3581000b6b25c5f00efd9984d5b0cfd9.js",
     "service-worker.js": "/joker-norris/service-worker.js",
     "static/css/2.510409cd.chunk.css.map": "/joker-norris/static/css/2.510409cd.chunk.css.map",
-    "static/css/main.d8cc6f78.chunk.css.map": "/joker-norris/static/css/main.d8cc6f78.chunk.css.map"
+    "static/css/main.ec44036a.chunk.css.map": "/joker-norris/static/css/main.ec44036a.chunk.css.map"
   }
 }
