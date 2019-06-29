@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRouter from './AppRouter';
 import * as serviceWorker from './serviceWorker';
-import './app.css'
+import './App.scss'
 import WebFont from 'webfontloader'
 import store from './redux/store'
 import { Provider } from 'react-redux';
