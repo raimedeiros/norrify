@@ -2,16 +2,16 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import catActions from '../redux/actions/catActions';
 import { connect } from 'react-redux';
-import Loading from './loading'
+import Loading from './Loading'
 
 class Categories extends Component {
   state = {
     loading: true
   }
-  setCategory(item) {
+  setCategory (item) {
     this.props.dispatch(catActions.setCategoria(item))
   }
-  render() {
+  render () {
     const { loading } = this.state;
     if (loading) {
       return (
@@ -44,7 +44,7 @@ class Categories extends Component {
     categories: []
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.setState({ loading: true })
     fetch('https://api.chucknorris.io/jokes/categories')
       .then(res => res.json())

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Moment from 'react-moment'
-import Navigator from '../components/navigator'
+import Navigator from '../components/Navigator'
 import jokeActions from '../redux/actions/jokeActions';
-import Loading from '../components/loading';
+import Loading from '../components/Loading';
 
 const url_api = 'https://api.chucknorris.io/jokes/random?category='
 
@@ -11,11 +11,11 @@ class Joke extends Component {
   state = {
     loading: true
   }
-  setJoke(item) {
+  setJoke (item) {
     item = item.joke
     this.props.dispatch(jokeActions.setJoke(item.created_at, item.icon_url, item.value, item.categories))
   }
-  render() {
+  render () {
     const { loading } = this.state;
     if (loading) {
       return (
@@ -52,11 +52,11 @@ class Joke extends Component {
     );
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.getJoke()
   }
 
-  getJoke() {
+  getJoke () {
     this.setState({ loading: true })
     fetch(url_api + (this.props.categoriaSelecionada.categoria ? this.props.categoriaSelecionada.categoria : 'animal'))
       .then(res => res.json())

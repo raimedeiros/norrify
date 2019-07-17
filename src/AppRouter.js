@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './pages/home'
-import Joke from './pages/joke'
+import Home from './pages/Home'
+import Joke from './pages/Joke'
 import 'bootstrap/dist/css/bootstrap.css';
 
-function App() {
+function App () {
   return (
     <div className="container">
       <Router basename='/joker-norris'>
