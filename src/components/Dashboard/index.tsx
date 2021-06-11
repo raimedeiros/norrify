@@ -12,7 +12,6 @@ export function Dashboard(){
         </h1>
       </div>
       <CategoriesList></CategoriesList>
-      <Categories></Categories>
     </>
   )
 }
