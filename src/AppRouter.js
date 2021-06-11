@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home'
 import {Dashboard} from './components/Dashboard'
-import Joke from './pages/Joke'
+import {Joke} from './components/Joke'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App () {

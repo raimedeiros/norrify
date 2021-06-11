@@ -21,7 +21,16 @@ export function CategoriesList(){
               <div className="row">
                 {categories.map(category=>(
                   <div key={category} className="col-6 col-md-4 text-center">
-                    <Link className="link-category" to='/joke/'>{category}</Link>
+                    <Link 
+                    className="link-category" 
+                    to={
+                      {
+                        pathname: '/joke/',
+                        state:{selectedCategory:category}
+                      }
+                    }>
+                      {category}
+                    </Link>
                   </div>
                 ))}
               </div>

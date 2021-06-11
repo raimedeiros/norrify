@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { connect } from 'react-redux'
+
 import Moment from 'react-moment'
-import {Navigator} from '../components/Navigator'
 import jokeActions from '../redux/actions/jokeActions';
+
+import {Navigator} from '../components/Navigator'
 import {Loading} from '../components/Loading';
 
 const url_api = 'https://api.chucknorris.io/jokes/random?category='
 
 class Joke extends Component {
+  
   state = {
     loading: true
   }
@@ -17,6 +20,9 @@ class Joke extends Component {
   }
   render () {
     const { loading } = this.state;
+    const location = useLocation()
+    import {selectedCategory} from location.state
+    
     if (loading) {
       return (
         <Loading></Loading>
@@ -24,6 +30,7 @@ class Joke extends Component {
     }
     return (
       <div className="joke-block">
+        {selectedCategory}
         <Navigator></Navigator>
         <div className="row text-center">
           <div className="col-12 col-md-8 card">
