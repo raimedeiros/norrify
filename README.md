@@ -1,7 +1,12 @@
 ## Criador de piadas do Chuck Norris
 
-Projeto criado cm base na API do [ChuckNorris.io](https://api.chucknorris.io/), utilizando React e Redux.
-O aplicativo inicia com a listagem das categorias disponíveis e ao selecionar alguma, é mostrada uma piada referente a categoria. Na página de categoria há a opção de voltar à listagem ou carregar mais uma piada da mesma categoria.
+***This project was made for an interview test.***
+
+The app was inittialy made using React and Redux to match the interview requirements. In 2021, I am rebuilding this app to remove unnecessary dependencies like Redux itself and Bootstrap to use new libraries that works better and make the project cleaner.
+
+This project was made basend in the API of [ChuckNorris.io](https://api.chucknorris.io/), using React.
+
+The app starts listing all the categories available and shows a joke when a category is selected. The joke page has options to generate another random joke or return to categories listing page.
 
 ###  `npm install`
 Baixa e instala as dependências do projeto
