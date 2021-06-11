@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Moment from 'react-moment'
 import Navigator from '../components/Navigator'
 import jokeActions from '../redux/actions/jokeActions';
-import Loading from '../components/Loading';
+import {Loading} from '../components/Loading';
 
 const url_api = 'https://api.chucknorris.io/jokes/random?category='
 
