@@ -1,6 +1,6 @@
 
 import ReactDOM from 'react-dom';
-import AppRouter from './AppRouter';
+import {AppRouter} from './AppRouter';
 import './App.scss'
 
 ReactDOM.render(

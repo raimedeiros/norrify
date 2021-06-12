@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {Dashboard} from './components/Dashboard'
 import {Joke} from './components/Joke'
 
-function App () {
+export function AppRouter () {
   return (
     <div className="container">
       <Router basename='/joker-norris'>
@@ -16,4 +16,3 @@ function App () {
   );
 }
 
-export default App;
