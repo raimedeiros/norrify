@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/joker-norris/static/css/main.ec44036a.chunk.css",
-    "main.js": "/joker-norris/static/js/main.d62f6353.chunk.js",
-    "main.js.map": "/joker-norris/static/js/main.d62f6353.chunk.js.map",
-    "runtime~main.js": "/joker-norris/static/js/runtime~main.6ff6196b.js",
-    "runtime~main.js.map": "/joker-norris/static/js/runtime~main.6ff6196b.js.map",
-    "static/css/2.510409cd.chunk.css": "/joker-norris/static/css/2.510409cd.chunk.css",
-    "static/js/2.179e0209.chunk.js": "/joker-norris/static/js/2.179e0209.chunk.js",
-    "static/js/2.179e0209.chunk.js.map": "/joker-norris/static/js/2.179e0209.chunk.js.map",
+    "main.css": "/joker-norris/static/css/main.7f39f13a.chunk.css",
+    "main.js": "/joker-norris/static/js/main.fdc5f1ae.chunk.js",
+    "main.js.map": "/joker-norris/static/js/main.fdc5f1ae.chunk.js.map",
+    "runtime-main.js": "/joker-norris/static/js/runtime-main.49fc8de5.js",
+    "runtime-main.js.map": "/joker-norris/static/js/runtime-main.49fc8de5.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/joker-norris/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.9e67810c.chunk.js": "/joker-norris/static/js/2.9e67810c.chunk.js",
+    "static/js/2.9e67810c.chunk.js.map": "/joker-norris/static/js/2.9e67810c.chunk.js.map",
     "index.html": "/joker-norris/index.html",
-    "precache-manifest.3581000b6b25c5f00efd9984d5b0cfd9.js": "/joker-norris/precache-manifest.3581000b6b25c5f00efd9984d5b0cfd9.js",
-    "service-worker.js": "/joker-norris/service-worker.js",
-    "static/css/2.510409cd.chunk.css.map": "/joker-norris/static/css/2.510409cd.chunk.css.map",
-    "static/css/main.ec44036a.chunk.css.map": "/joker-norris/static/css/main.ec44036a.chunk.css.map"
-  }
+    "static/css/2.ef9168ec.chunk.css.map": "/joker-norris/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.7f39f13a.chunk.css.map": "/joker-norris/static/css/main.7f39f13a.chunk.css.map",
+    "static/js/2.9e67810c.chunk.js.LICENSE.txt": "/joker-norris/static/js/2.9e67810c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49fc8de5.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.9e67810c.chunk.js",
+    "static/css/main.7f39f13a.chunk.css",
+    "static/js/main.fdc5f1ae.chunk.js"
+  ]
 }
