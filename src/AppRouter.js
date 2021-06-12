@@ -1,9 +1,7 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './pages/Home'
+import 'bootstrap/dist/css/bootstrap.css';
 import {Dashboard} from './components/Dashboard'
 import {Joke} from './components/Joke'
-import 'bootstrap/dist/css/bootstrap.css';
 
 function App () {
   return (
@@ -11,7 +9,6 @@ function App () {
       <Router basename='/joker-norris'>
         <Switch>
           <Route path="/" exact component={Dashboard} />
-          {/* <Route path="/" exact component={Home} /> */}
           <Route path='/joke/' component={Joke} />
         </Switch>
       </Router>

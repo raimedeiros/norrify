@@ -9,7 +9,7 @@ interface JokeProps{
   selectedCategory:string
 }
 
-interface Joke{
+interface JokeRequest{
   categories: [],
   icon_url: string,
   id: string,
@@ -23,14 +23,14 @@ export function Joke(){
   const location = useLocation<JokeProps>()
   const {selectedCategory} = location.state
 
-  const [joke, setJoke] = useState<Joke>()
+  const [joke, setJoke] = useState<JokeRequest>()
   const [loadingStatus, setLoadingStatus] = useState(false)
   
   async function loadJoke(): Promise<void>{
     setLoadingStatus(true)
     const response = await api.get('random?category=' + selectedCategory)
-    const joke = response.data
-    setJoke(joke)
+    const jokeItem = response.data
+    setJoke(jokeItem)
     setLoadingStatus(false)
   }
   
@@ -56,8 +56,8 @@ export function Joke(){
           </div>
           <div className='footer-card'>
             <p className='carregar-outra' onClick={() => loadJoke()}>
-              {loadingStatus == true && <span>Loading</span>}
-              {loadingStatus == false && <span>Load another joke</span>}
+              {loadingStatus === true && <span>Loading</span>}
+              {loadingStatus === false && <span>Load another joke</span>}
             </p>
           </div>
         </div>

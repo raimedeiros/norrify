@@ -13,13 +13,13 @@ export function CategoriesList(){
       setCategories(response.data)
     })
     setLoadingStatus(false)
-  })
+  },[])
 
   return (
     <>
-      {loadingStatus==true&&<Loading></Loading>}
+      {loadingStatus===true&&<Loading></Loading>}
       
-      {loadingStatus==false && (
+      {loadingStatus===false && (
         <div className="row text-center">
           <div className="col-12 col-md-8 card">
             <div className="title-card">
