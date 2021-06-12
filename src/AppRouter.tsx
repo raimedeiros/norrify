@@ -1,15 +1,14 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './pages/Home'
-import Joke from './pages/Joke'
 import 'bootstrap/dist/css/bootstrap.css';
+import {Dashboard} from './components/Dashboard'
+import {Joke} from './components/Joke'
 
-function App () {
+export function AppRouter () {
   return (
     <div className="container">
       <Router basename='/joker-norris'>
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={Dashboard} />
           <Route path='/joke/' component={Joke} />
         </Switch>
       </Router>
@@ -17,4 +16,3 @@ function App () {
   );
 }
 
-export default App;
