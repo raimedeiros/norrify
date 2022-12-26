@@ -1,46 +1,39 @@
-import { useEffect, useState } from "react"
-import { Link } from 'react-router-dom'
-import { api } from "../../services/api"
-import { Loading } from "../Loading"
+import { useEffect, useState } from 'react';
+import NorrisService from '../../services/api';
+import { Category } from '../Category';
+import { Loading } from '../Loading';
 
-export function CategoriesList(){
+export function CategoriesList() {
+  const [categories, setCategories] = useState<[]>();
+  const [isLoading, setIsLoading] = useState(true);
 
-  const [categories, setCategories] = useState([])
-  const [loadingStatus, setLoadingStatus] = useState(true)
-
-  useEffect(()=>{
-    api.get('categories').then(response => {
-      setCategories(response.data)
-    })
-    setLoadingStatus(false)
-  },[])
+  useEffect(() => {
+    const getCategories = async () => {
+      setCategories(await NorrisService.getCategories());
+    };
+    getCategories();
+    setIsLoading(false);
+  }, []);
 
   return (
     <>
-      {loadingStatus===true&&<Loading></Loading>}
-      
-      {loadingStatus===false && (
+      {isLoading === true && <Loading></Loading>}
+
+      {isLoading === false && categories && (
         <div className="row text-center">
           <div className="col-12 col-md-8 card">
             <div className="title-card">
               <h2>Select a category</h2>
             </div>
-            
+
             <div className="content-card">
               <div className="row">
-                {categories.map(category=>(
-                  <div key={category} className="col-6 col-md-4 text-center">
-                    <Link 
-                    className="link-category" 
-                    to={
-                      {
-                        pathname: '/joke/',
-                        state:{selectedCategory:category}
-                      }
-                    }>
-                      {category}
-                    </Link>
-                  </div>
+                {categories.map((category) => (
+                  <>
+                    <div key={category} className="col-6 col-md-4 text-center">
+                      <Category categoryName={category} />
+                    </div>
+                  </>
                 ))}
               </div>
             </div>
@@ -48,5 +41,5 @@ export function CategoriesList(){
         </div>
       )}
     </>
-  )
+  );
 }
