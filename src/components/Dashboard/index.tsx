@@ -1,16 +1,18 @@
-import { CategoriesList } from '../CategoriesList'
+import { CategoriesList } from '../CategoriesList';
+import { DashboardContainer, DashboardLogo, DashboardTitle } from './styles';
 
-export function Dashboard(){
-  return(
-    <>
+const norrisLogo = 'https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png';
+
+export function Dashboard() {
+  return (
+    <DashboardContainer>
       <div className="header-block text-center">
-        <img alt="Chuck Norris icon" src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"></img>
-        <h1>
-          <span>Hey Norris,</span>
-          <span>make a joke!</span>
-        </h1>
+        <DashboardLogo alt="Chuck Norris icon" src={norrisLogo}></DashboardLogo>
+        <DashboardTitle>
+          <span>Hey Norris, make a joke!</span>
+        </DashboardTitle>
       </div>
       <CategoriesList></CategoriesList>
-    </>
-  )
+    </DashboardContainer>
+  );
 }

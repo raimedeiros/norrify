@@ -56,49 +56,12 @@ html {
   .content-card {
     padding: 25px 0;
     a.link-category {
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      margin: 10px auto;
-      background: #545DE6;
-      border-radius: 100%;
-      color: #FFFFFF;
-      width: 100px;
-      height: 100px;
-      display: block;
-      font-size: 1.2rem;
-      font-weight: 500;
-      line-height: 100px;
-      text-transform: capitalize;
+      
     }
   }
 }
 
-.loadingStatus {
-  padding-top: 200px;
-  color: #FFFFFF;
-}
 
-.joke-block {
-  .card {
-    margin-top: 30px;
-  }
-  img {
-    margin-top: -30px;
-  }
-  .joke-content {
-    font-size: 2rem;
-    line-height: 40px;
-    margin: 20px 0;
-  }
-  .carregar-outra {
-    background: #7967FE;
-    border-radius: 28px;
-    padding: 10px;
-    color: #FFFFFF;
-    width: 50%;
-    margin: 0 auto;
-    cursor: pointer;
-  }
-}
 
 .lds-dual-ring {
   display: inline-block;
