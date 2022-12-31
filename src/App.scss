@@ -9,31 +9,6 @@ html {
     height: 100%;
   }
 }
-
-.navigator {
-  margin-top: 10px;
-  a {
-    color: #7967FE;
-    background: #ffffff;
-    border-radius: 50px 10px 10px 50px;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 40px;
-    padding: 0px 10px 0px 15px;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
-.header-block {
-  color: #FFFFFF;
-  margin: 50px 0;
-  span {
-    display: block;
-  }
-}
-
 .card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22);
   background: #FFFFFF;
@@ -55,74 +30,6 @@ html {
   }
   .content-card {
     padding: 25px 0;
-    a.link-category {
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      margin: 10px auto;
-      background: #545DE6;
-      border-radius: 100%;
-      color: #FFFFFF;
-      width: 100px;
-      height: 100px;
-      display: block;
-      font-size: 1.2rem;
-      font-weight: 500;
-      line-height: 100px;
-      text-transform: capitalize;
-    }
   }
 }
 
-.loadingStatus {
-  padding-top: 200px;
-  color: #FFFFFF;
-}
-
-.joke-block {
-  .card {
-    margin-top: 30px;
-  }
-  img {
-    margin-top: -30px;
-  }
-  .joke-content {
-    font-size: 2rem;
-    line-height: 40px;
-    margin: 20px 0;
-  }
-  .carregar-outra {
-    background: #7967FE;
-    border-radius: 28px;
-    padding: 10px;
-    color: #FFFFFF;
-    width: 50%;
-    margin: 0 auto;
-    cursor: pointer;
-  }
-}
-
-.lds-dual-ring {
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-  &:after {
-    content: " ";
-    display: block;
-    width: 46px;
-    height: 46px;
-    margin: 10px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    border-color: #fff transparent #fff transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-  }
-}
-
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
